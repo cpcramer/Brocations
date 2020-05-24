@@ -1,31 +1,17 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import NavBar from './NavBar';
+import Headline from './Headline';
 
 class App extends Component {
-    constructor () {
-        super();
-
-        this.state = {
-            name: "Chad"
-        };
-        
-        this.handleChange = this.handleChange.bind(this);
-    }
-
-    handleChange(event) {
-        const { value } = event.target;
-        this.setState( () => {
-            return {
-                value
-            };
-        });
-    }
-
-    render() {
-        return (
-            <h1>Hello, {this.state.name} !</h1>
-        );
-    }
+  render() {
+    return (
+      <div>
+        < NavBar />
+        < Headline />
+      </div>
+    )
+  }
 }
 
 export default App;
