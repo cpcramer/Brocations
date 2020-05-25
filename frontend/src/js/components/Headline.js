@@ -7,10 +7,10 @@ import { CardMedia, makeStyles, withTheme } from '@material-ui/core';
 const useStyles = makeStyles ({
   image: {
     height: '40vh',
-    position: 'relative',
-    backgroundSize: 'cover',
-    marginLeft: '-60px',
-    marginRight: '-60px'
+    // position: 'relative',
+    // marginLeft: '-60px',
+    // marginRight: '-60px'
+    width: '100vw',
   },
   imageText: {
     position: 'absolute',
@@ -43,7 +43,7 @@ const Headline = () => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container>
+      <Container style={{ margin: '0', padding: '0'}}>
         <CardMedia className={classes.image} image='https://images.pexels.com/photos/1049317/pexels-photo-1049317.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'/>
 
       <Typography className={classes.imageText} variant='h1'>
