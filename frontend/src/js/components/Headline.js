@@ -7,10 +7,10 @@ import { CardMedia, makeStyles, withTheme } from '@material-ui/core';
 const useStyles = makeStyles ({
   image: {
     height: '40vh',
-    width: '100vw',
-    marginLeft: '-24px',
     position: 'relative',
-    
+    backgroundSize: 'cover',
+    marginLeft: '-60px',
+    marginRight: '-60px'
   },
   imageText: {
     position: 'absolute',
@@ -21,7 +21,7 @@ const useStyles = makeStyles ({
     color: 'white',
     fontWeight: 'bold',
     fontStyle: 'italic',
-    textShadow: '#2b2b2b 0px 0px 20px'
+    textShadow: '#2b2b2b 0px 0px 20px',
   },
   imageDescription: {
     position: 'absolute',
@@ -31,9 +31,9 @@ const useStyles = makeStyles ({
     textAlign: 'center',
     color: 'white',
     fontSize: '28px',
-    fontStyle: 'italic',
     lineHeight: '32px',
-    textShadow: '#2b2b2b 0px 0px 20px'
+    textShadow: '#2b2b2b 0px 0px 20px',
+    padding: '20px 150px 20px 150px'
   }
 })
 
