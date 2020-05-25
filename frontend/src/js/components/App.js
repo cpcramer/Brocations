@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import NavBar from './NavBar';
 import Headline from './Headline';
 
+
 class App extends Component {
   render() {
     return (
