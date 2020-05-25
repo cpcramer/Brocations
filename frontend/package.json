@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --made development",
+    "start": "webpack-dev-server --host 127.0.0.1 --port 3001",
     "build": "webpack --mode production"
   },
   "author": "",
@@ -21,6 +21,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
