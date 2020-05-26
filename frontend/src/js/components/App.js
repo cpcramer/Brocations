@@ -8,7 +8,7 @@ import NavBar from './NavBar';
 class App extends Component {
   render() {
     return (
-      <div style={{backgroundColor: '#EEEEEE'}}>
+      <div style={{backgroundColor: '#fff'}}>
         < NavBar />
         < Headline />
         < Cards />

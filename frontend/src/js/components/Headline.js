@@ -6,11 +6,16 @@ import { CardMedia, makeStyles, withTheme } from '@material-ui/core';
 
 const useStyles = makeStyles ({
   image: {
-    height: '40vh',
+    height: '45vh',
     // position: 'relative',
     // marginLeft: '-60px',
     // marginRight: '-60px'
     width: '100vw',
+    // borderTop: '1px solid black',
+    // borderBottom: '1px solid black'
+    border: '1px solid #fff',
+    backgroundColor: '#fff',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.18)',
   },
   imageText: {
     position: 'absolute',

@@ -8,16 +8,20 @@ import AssessmentIcon from '@material-ui/icons/Assessment';
 
 const useTagCardStyles = makeStyles(({ palette }) => ({
   card: {
-    border: '3px solid #E0E0E0',
-    width: '27vw',
+    border: '1px solid #F7F7F7',
+    backgroundColor: '#fff',
+    borderRadius: '12px',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.18)',
+
+    width: '22vw',
     height: '25vh',
     margin: '40px 0 0 0',
-    minHeight: '25vh',
+    minHeight: '30vh',
     background: palette.background.default,
     position: 'relative',
   },
   innerCard: {
-    padding: '15px 20px 15px 20px',
+    padding: '55px 20px 15px 20px',
   },
   icon: {
     color: '#fb4f4f',
