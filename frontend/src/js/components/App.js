@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import NavBar from './NavBar';
+import Cards from './Cards';
 import Headline from './Headline';
+import NavBar from './NavBar';
 
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{backgroundColor: '#fff'}}>
         < NavBar />
         < Headline />
+        < Cards />
       </div>
     )
   }

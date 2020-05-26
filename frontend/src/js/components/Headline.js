@@ -6,11 +6,16 @@ import { CardMedia, makeStyles, withTheme } from '@material-ui/core';
 
 const useStyles = makeStyles ({
   image: {
-    height: '40vh',
+    height: '45vh',
+    // position: 'relative',
+    // marginLeft: '-60px',
+    // marginRight: '-60px'
     width: '100vw',
-    marginLeft: '-24px',
-    position: 'relative',
-    
+    // borderTop: '1px solid black',
+    // borderBottom: '1px solid black'
+    border: '1px solid #fff',
+    backgroundColor: '#fff',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.18)',
   },
   imageText: {
     position: 'absolute',
@@ -21,7 +26,7 @@ const useStyles = makeStyles ({
     color: 'white',
     fontWeight: 'bold',
     fontStyle: 'italic',
-    textShadow: '#2b2b2b 0px 0px 20px'
+    textShadow: '#2b2b2b 0px 0px 20px',
   },
   imageDescription: {
     position: 'absolute',
@@ -31,9 +36,9 @@ const useStyles = makeStyles ({
     textAlign: 'center',
     color: 'white',
     fontSize: '28px',
-    fontStyle: 'italic',
     lineHeight: '32px',
-    textShadow: '#2b2b2b 0px 0px 20px'
+    textShadow: '#2b2b2b 0px 0px 20px',
+    padding: '20px 150px 20px 150px'
   }
 })
 
@@ -43,7 +48,7 @@ const Headline = () => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container>
+      <Container style={{ margin: '0', padding: '0'}}>
         <CardMedia className={classes.image} image='https://images.pexels.com/photos/1049317/pexels-photo-1049317.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'/>
 
       <Typography className={classes.imageText} variant='h1'>
